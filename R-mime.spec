@@ -4,7 +4,7 @@
 #
 Name     : R-mime
 Version  : 0.4
-Release  : 14
+Release  : 15
 URL      : http://cran.r-project.org/src/contrib/mime_0.4.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/mime_0.4.tar.gz
 Summary  : Map Filenames to MIME Types

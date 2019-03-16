@@ -4,7 +4,7 @@
 #
 Name     : R-mime
 Version  : 0.6
-Release  : 61
+Release  : 62
 URL      : https://cran.r-project.org/src/contrib/mime_0.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mime_0.6.tar.gz
 Summary  : Map Filenames to MIME Types
@@ -14,7 +14,8 @@ Requires: R-mime-lib = %{version}-%{release}
 BuildRequires : buildreq-R
 
 %description
-derived from /etc/mime.types in UNIX-type systems.
+# mime
+[![Build Status](https://travis-ci.org/yihui/mime.svg)](https://travis-ci.org/yihui/mime)
 
 %package lib
 Summary: lib components for the R-mime package.
@@ -32,11 +33,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1538876532
+export SOURCE_DATE_EPOCH=1552776180
 
 %install
+export SOURCE_DATE_EPOCH=1552776180
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1538876532
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -71,8 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library mime|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  mime || :
 
 
 %files
@@ -97,10 +97,8 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/mime/help/paths.rds
 /usr/lib64/R/library/mime/html/00Index.html
 /usr/lib64/R/library/mime/html/R.css
-/usr/lib64/R/library/mime/libs/symbols.rds
+/usr/lib64/R/library/mime/tests/mime.R
 
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/mime/libs/mime.so
-/usr/lib64/R/library/mime/libs/mime.so.avx2
-/usr/lib64/R/library/mime/libs/mime.so.avx512

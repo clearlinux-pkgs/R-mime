@@ -1,7 +1,9 @@
 # This file contains recursive sources that require this package
-R-crul
+R-colorspace
+R-httr
 R-manipulateWidget
 R-markdown
 R-rmarkdown
+R-rstan
+R-rstanarm
 R-shinyBS
-R-shinydashboard

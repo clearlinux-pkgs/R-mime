@@ -4,7 +4,7 @@
 #
 Name     : R-mime
 Version  : 0.7
-Release  : 68
+Release  : 69
 URL      : https://cran.r-project.org/src/contrib/mime_0.7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/mime_0.7.tar.gz
 Summary  : Guesses the MIME type from a filename extension using the data derived from /etc/mime.types in UNIX-type systems.

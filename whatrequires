@@ -1,23 +1,10 @@
 # This file contains recursive sources that require this package
 R-colorspace
-R-ggridges
-R-gridExtra
-R-htmlwidgets
+R-crul
 R-httr
-R-joineRML
-R-lhs
 R-magrittr
-R-miniUI
-R-phylogram
-R-readxl
-R-rsample
-R-rstan
-R-rstanarm
+R-markdown
+R-rmarkdown
 R-seroincidence
-R-shinyBS
-R-shinydashboard
-R-shinyjs
-R-shinythemes
-R-tfruns
-R-vioplot
+R-shiny
 R-withr

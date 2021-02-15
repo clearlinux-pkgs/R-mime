@@ -1,8 +1,5 @@
 # This file contains recursive sources that require this package
 R-crul
 R-httr
-R-magrittr
 R-markdown
-R-rmarkdown
-R-seroincidence
 R-shiny

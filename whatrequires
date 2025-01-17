@@ -1,6 +1,6 @@
 # This file contains recursive sources that require this package
+R-bslib
 R-crul
 R-httr
-R-markdown
+R-rgl
 R-shiny
-R-xfun
